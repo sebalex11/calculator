@@ -1,4 +1,24 @@
 body {
-  background-color: grey; }
+  background-color: #FFF;
+  color: #FA6900; }
+  body * {
+    border: solid #A3A3A3 2px; }
+
+#calc {
+  background-color: #FFF;
+  width: 300px;
+  height: 500px;
+  border-radius: 20px;
+  margin: 40px auto;
+  box-shadow: 2px 2px 5px #888888; }
+
+#display {
+  width: 230px;
+  height: 65px;
+  margin: 20px auto;
+  border-radius: 15px;
+  padding: 10px 25px;
+  font-size: 25px;
+}
 
 /*# sourceMappingURL=style.css.map */

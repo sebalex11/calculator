@@ -4,4 +4,6 @@ $(function(){
 		alert("dont do that")
 	})
 
+	$("#display").html("Display")
+
 })
