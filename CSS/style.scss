@@ -2,12 +2,13 @@ $colorDark: #303030;
 $colorText: #FA6900;
 $colorLight: #FFF;
 $colorBorder: #A3A3A3;
+$border: solid $colorBorder 2px;
 
 body {
 	background-color: $colorLight;
 	color: $colorText;
-	* {
-		border: solid $colorBorder 2px;
+	div {
+		border: $border;
 	}
 }
 
@@ -26,6 +27,38 @@ body {
 	margin: 20px auto;
 	border-radius: 15px;
 	padding: 0px 25px;
-	vertical-align: bottom;
+	text-align: right;
+	position: relative;
+	overflow: hidden;
 	//background-color: $colorBorder;
+}
+
+#digi  	 {
+	position: absolute;
+	bottom: 0;
+	right: 15;
+	font-size: 35px;
+}
+
+.button {
+	height: 45px;
+	width: 45px;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 40px;
+	overflow: hidden;
+	position: relative;
+	margin: 15px;
+	&:hover{
+		background-color: $colorText;
+		color: $colorLight;
+		cursor: pointer;
+		cursor: hand;
+	}
+}
+
+p {
+	position: absolute;
+	top: -40;
+	left:14;
 }

@@ -1,0 +1,4 @@
+Plan
+
+function to display numbers
+function to take and work the numbers

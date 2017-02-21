@@ -1,7 +1,7 @@
 body {
   background-color: #FFF;
   color: #FA6900; }
-  body * {
+  body div {
     border: solid #A3A3A3 2px; }
 
 #calc {
@@ -14,11 +14,38 @@ body {
 
 #display {
   width: 230px;
-  height: 65px;
+  height: 85px;
   margin: 20px auto;
   border-radius: 15px;
-  padding: 10px 25px;
-  font-size: 25px;
-}
+  padding: 0px 25px;
+  text-align: right;
+  position: relative;
+  overflow: hidden; }
+
+#digi {
+  position: absolute;
+  bottom: 0;
+  right: 15;
+  font-size: 35px; }
+
+.button {
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 40px;
+  overflow: hidden;
+  position: relative;
+  margin: 15px; }
+  .button:hover {
+    background-color: #FA6900;
+    color: #FFF;
+    cursor: pointer;
+    cursor: hand; }
+
+p {
+  position: absolute;
+  top: -40;
+  left: 14; }
 
 /*# sourceMappingURL=style.css.map */
