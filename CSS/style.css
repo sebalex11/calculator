@@ -6,8 +6,8 @@ body {
 
 #calc {
   background-color: #FFF;
-  width: 300px;
-  height: 500px;
+  width: 350px;
+  height: 550px;
   border-radius: 20px;
   margin: 40px auto;
   box-shadow: 2px 2px 5px #888888; }
@@ -46,6 +46,26 @@ body {
 p {
   position: absolute;
   top: -40;
-  left: 14; }
+  left: 13; }
+
+.smaller {
+  font-size: 25px; }
+  .smaller p {
+    top: -15;
+    left: 5; }
+
+.tall {
+  height: 135px;
+  width: 45px;
+  float: right;
+  margin-right: 40px;
+  top: -2px; }
+  .tall p {
+    margin-top: 80px; }
+
+.wide {
+  width: 127px; }
+  .wide p {
+    left: 55px; }
 
 /*# sourceMappingURL=style.css.map */
