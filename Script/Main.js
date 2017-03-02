@@ -16,6 +16,7 @@ $(function(){
 	var checkDecimal = 	function(){
 
 							if($digi.html().indexOf(".") < 0 && operands.indexOf($digi.html()) < 0){
+								finisher();
 								if($digi.html().length >12){
 									$("#digi").html("Limit Reached");
 									setTimeout(function(){
@@ -34,6 +35,15 @@ $(function(){
 						}
 					}
 
+
+	var finisher = function(){
+				if(exe == "finished" && $running.html().length < 1){
+			console.log($running.html().length)
+			exe = "";
+			clearAll();
+		}
+	}
+
 //if you press a button this function handles the event
 
 	$(".number").on("click", function(){
@@ -41,10 +51,8 @@ $(function(){
 		console.log(exe)
 		console.log($digi.html())
 
-		if(exe == "finished"){
-			exe = "";
-			clearAll();
-		}
+//checks if it is finished
+	finisher()
 
 //set variables to make calling easier
 		var buttonPressed = $(this).attr("data-num");
@@ -120,7 +128,7 @@ console.log(parseFloat(val));
 		}
 	},0)
 	if(String(total).length > 12){
-		
+		console.log(String(total))
 		$("#digi").html("Limit Reached");
 		
 		setTimeout(function(){
