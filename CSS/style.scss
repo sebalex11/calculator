@@ -1,0 +1,93 @@
+$colorDark: #303030;
+$colorText: #FA6900;
+$colorLight: #FFF;
+$colorBorder: #A3A3A3;
+$border: solid $colorBorder 2px;
+@import url('https://fonts.googleapis.com/css?family=Questrial|Roboto+Mono');
+
+body {
+	font-family: /*"Questrial",*/ sans-serif;
+	background-color: $colorDark;
+	color: $colorText;
+	div {
+		border: $border;
+	}
+}
+
+#calc {
+	background-color: $colorDark;
+	width: 350px;
+	height: 550px;
+	border-radius: 20px;
+	margin: 40px auto;
+	}
+
+#display{
+	width: 230px;
+	height: 85px;
+	margin: 20px auto;
+	border-radius: 15px;
+	padding: 0px 25px;
+	text-align: right;
+	position: relative;
+	overflow: hidden;
+	//background-color: $colorBorder;
+	border-style: none;
+}
+
+#digi  	 {
+	position: absolute;
+	bottom: 0;
+	right: 15;
+	font-size: 35px;
+}
+
+.button {
+	height: 45px;
+	width: 45px;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 40px;
+	overflow: hidden;
+	position: relative;
+	margin: 15px;
+	&:hover{
+		background-color: $colorText;
+		color: $colorLight;
+		cursor: pointer;
+		cursor: hand;
+	}
+}
+
+p {
+	position: absolute;
+	top: -37;
+	left:10;
+}
+
+.smaller {
+	font-size: 25px;
+	p{
+		top: -15;
+		left: 5;
+	}
+}
+
+.tall {
+	height: 135px;
+	width: 45px;
+	float: right;
+	margin-right: 40px;
+	top: -2px;
+	p{
+		margin-top: 80px
+	}
+
+}
+
+.wide {
+	width: 127px;
+	p {
+		left: 55px
+	}
+}
